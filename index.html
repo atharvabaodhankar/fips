@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fips</title>
     <link rel="stylesheet" href="style.css">
+    <!-- https://fipsziy7a.zyrosite.com -->
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <div class="hamburger">
@@ -30,40 +33,57 @@
         <div class="header">
             <h1 class="heading">You deserve a comfortable life</h1>
 
-            <p>We have made quality our habit. It's not something that we just strive for - we live by this principle every day. </p>
+            <p>We have made quality our habit. It's not something that we just strive for - we live by this principle
+                every day. </p>
             <a href="#">Our store</a>
         </div>
         <div class="header-imgs">
             <div class="header-box">
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=784,h=864,fit=crop/fipsziy7a/agata-create-unsplash-AQEzqWqnVaS3eKx5.jpg" alt="">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=784,h=864,fit=crop/fipsziy7a/agata-create-unsplash-AQEzqWqnVaS3eKx5.jpg"
+                    alt="">
             </div>
             <div class="header-box">
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=432,fit=crop/fipsziy7a/daniil-silantev-unsplash-YleXlbbvg6U9PDB9.jpg" alt="">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=392,h=432,fit=crop/fipsziy7a/daniil-silantev-unsplash-YleXlbbvg6U9PDB9.jpg"
+                    alt="">
             </div>
             <div class="header-box">
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=784,h=864,fit=crop/fipsziy7a/jean-philippe-delberghe-PVQnaFyePvU-unsplash-mnl08bgoeeHyRV0W.jpg" alt="">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=784,h=864,fit=crop/fipsziy7a/jean-philippe-delberghe-PVQnaFyePvU-unsplash-mnl08bgoeeHyRV0W.jpg"
+                    alt="">
             </div>
         </div>
     </section>
+    <section id="whoweare">
+        <div class="whoweare-left">
+            <h2>WHO WE ARE</h2>
+            <h1>It's not just furniture - it's our passion</h1>
+        </div>
+        <div class="whoweare-right">
+           <p> We have made quality our habit. It's not something that we just strive for - we live by this principle every day.  
+            <br> <br>
+
+            While most of the things about the creative process will be forgotten, the excellence of our products and services will be remembered.</p>
+        </div>
+    </section>
     <script>
-       
+
         let navBar = document.querySelector("nav");
         let hamburger = document.querySelector(".hamburger");
-        
-        hamburger.addEventListener("click", ()=>{
+
+        hamburger.addEventListener("click", () => {
             hamburger.classList.toggle('active');
             navBar.classList.toggle('active');
         })
 
-        window.addEventListener('scroll',()=>{
-            if(scrollY>80){
+        window.addEventListener('scroll', () => {
+            if (scrollY > 80) {
                 navBar.classList.add("activenav");
-            }else{
+            } else {
                 navBar.classList.remove("activenav");
             }
         })
-        
-       
+
+
     </script>
 </body>
+
 </html>

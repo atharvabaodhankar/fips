@@ -35,6 +35,7 @@ nav {
     top: 0;
     transform: translate(-50%, 0);
     background-color: #fff;
+    z-index: 100;
 }
 
 nav .logo {
@@ -175,6 +176,44 @@ nav ul li a:hover::after {
     bottom: initial;
     transform: rotate(-45deg);
 }
+/* WhoWeAre */
+#whoweare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.whoweare-left{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 350px;
+    text-align: left;
+    margin-right: 10rem;
+}
+.whoweare-left h2{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+.whoweare-left h1{
+    font-size: 5rem;
+    margin-top: 4rem;
+    font-weight:500;
+}
+.whoweare-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    width: 390px;
+    margin-left: 5rem;
+    align-self: flex-end;
+}
+.whoweare-right p{
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
 @media screen and (max-width:1300px) {
     nav {
         width: 88%;
@@ -182,6 +221,14 @@ nav ul li a:hover::after {
     .header-box {
         width: 34%;
         margin: 0 1.5rem;
+    }
+}
+@media screen and (max-width:980px) {
+    .whoweare-left {
+        margin-right: 0rem;
+    }
+    .whoweare-right {
+        margin-left: 1rem;
     }
 }
 @media screen and (max-width:940px) {
@@ -233,6 +280,24 @@ nav ul li a:hover::after {
     .header p {
         width: auto;
     }
+    #whoweare{
+        flex-direction: column;
+    }
+    .whoweare-left {
+        width: 420px;
+    }
+    .whoweare-left h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        line-height:5rem;
+    }
+    .whoweare-right {
+        width: 420px;
+        align-self: center;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    
 }
 @media screen and (max-width:000px) {
     
@@ -250,8 +315,13 @@ nav ul li a:hover::after {
         height: 260px;
     }
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:480px) {
+    .whoweare-left {
+        width:85%;
+    }
+    .whoweare-right {
+        width:85%;
+    }
 }
 @media screen and (max-width:330px) {
     .header h1 {
