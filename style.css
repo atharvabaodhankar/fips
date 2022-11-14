@@ -214,6 +214,45 @@ nav ul li a:hover::after {
     font-size: 1.6rem;
     line-height: 2.8rem;
 }
+/* Our Credo */
+#credo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.credo-text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 3rem;
+}
+.credo-text h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.credo-text h1{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+.credo-text p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+.credo-img{
+    width: 530px;
+    height: 480px;
+    margin-left: 3rem;
+}
+.credo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 @media screen and (max-width:1300px) {
     nav {
         width: 88%;
@@ -221,6 +260,12 @@ nav ul li a:hover::after {
     .header-box {
         width: 34%;
         margin: 0 1.5rem;
+    }
+}
+@media screen and (max-width:1060px){
+    .credo-img {
+        width: 371px;
+        height: 397px;
     }
 }
 @media screen and (max-width:980px) {
@@ -272,6 +317,9 @@ nav ul li a:hover::after {
     .header-box {
         width: 40%;
     }
+    .credo-text {
+        width: 300px;
+    }
 }
 @media screen and (max-width:800px) {
     .header{
@@ -297,6 +345,22 @@ nav ul li a:hover::after {
         margin-top: 3rem;
         margin-left: 0;
     }
+    #credo{
+        flex-direction: column;
+    }
+    .credo-text {
+        width: 500px;
+    }
+    .credo-img {
+        width: 534px;
+        height: 397px;
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    .credo-text h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
     
 }
 @media screen and (max-width:000px) {
@@ -306,6 +370,12 @@ nav ul li a:hover::after {
     .header-box {
         width: 80%;
     }
+    .credo-text {
+        width: 80%;
+    }
+    .credo-img {
+        width: 85%;
+    }
 }
 @media screen and (max-width:500px) {
     .header h1 {
@@ -313,6 +383,9 @@ nav ul li a:hover::after {
     }
     .header-box {
         height: 260px;
+    }
+    .credo-img {
+        height: 226px;
     }
 }
 @media screen and (max-width:480px) {
