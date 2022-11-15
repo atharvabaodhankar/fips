@@ -253,6 +253,78 @@ nav ul li a:hover::after {
     height: 100%;
     object-fit: cover;
 }
+/* Feed */
+#feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+.feed-header{
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+.feed-header h1{
+    font-size:3.5rem ;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feed-box{
+    width: 300px;
+    margin: 1.5rem 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.feed-box-inner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+.feed-box-inner h1{
+    color: #fff;
+    font-size: 3rem;
+    transform: translateY(30px);
+    transition: all .4s ease;
+    opacity: 0;
+}
+.feed-box:hover .feed-box-inner h1{
+    transform: translateY(0);
+    opacity: 1;
+}
+.feed-box:hover .feed-box-inner{
+    background-color: #ccadadcd;
+}
+.feed-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#feed a{
+    font-size: 1.6rem;
+    padding: 1.5rem 4rem;
+    color: #fff;
+    background-color: var(--main);
+    transition: all .3s ease;
+    margin-top: 5rem;
+}
+#feed a:hover{
+    background-color: var(--main-hover);
+}
 @media screen and (max-width:1300px) {
     nav {
         width: 88%;
@@ -261,11 +333,17 @@ nav ul li a:hover::after {
         width: 34%;
         margin: 0 1.5rem;
     }
+    .feed-box {
+        width: 240px;
+    }
 }
 @media screen and (max-width:1060px){
     .credo-img {
         width: 371px;
         height: 397px;
+    }
+    .feed-box {
+        width: 194px;
     }
 }
 @media screen and (max-width:980px) {
@@ -317,8 +395,14 @@ nav ul li a:hover::after {
     .header-box {
         width: 40%;
     }
-    .credo-text {
+    .credo-text { 
         width: 300px;
+    }
+    .feed{
+        flex-wrap: wrap;
+    }
+    .feed-box {
+        width: 310px;
     }
 }
 @media screen and (max-width:800px) {
@@ -363,8 +447,10 @@ nav ul li a:hover::after {
     }
     
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:700px) {
+    .feed-box {
+        width: 240px;
+    }
 }
 @media screen and (max-width:600px) {
     .header-box {
@@ -377,6 +463,11 @@ nav ul li a:hover::after {
         width: 85%;
     }
 }
+@media screen and (max-width:550px) {
+    .feed-box {
+        width: 70%;
+    }
+}
 @media screen and (max-width:500px) {
     .header h1 {
         font-size: 3.8rem;
@@ -386,6 +477,9 @@ nav ul li a:hover::after {
     }
     .credo-img {
         height: 226px;
+    }
+    .feed-box {
+        width: 85%;
     }
 }
 @media screen and (max-width:480px) {
