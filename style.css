@@ -51,7 +51,6 @@ nav ul {
 
 nav.activenav {
     position: fixed;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 nav ul li {
@@ -404,7 +403,119 @@ nav ul li a:hover::after {
 .contact a:hover{
     background-color: var(--main-hover);
 }
-
+/* Appreciate */
+#appre{
+    height: 40vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1511097799136-3661d1bb586c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjcyNTgzfQ&w=1920&q=70&auto=format&fit=crop);
+    background-position: center;
+    background-size: cover;
+}
+/* Footer */
+#footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6rem 2rem;
+}
+.footer-left{
+    margin-right: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-address{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 5rem;
+}
+.footer-address h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer-address p{
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1.3rem 0;
+}
+.footer-address-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.footer-address-social i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 1rem;
+}
+.footer-address-social i:hover{
+    color: #4b4b4b;
+}
+.footer-contacts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+.footer-contacts h1{
+    font-size: 2rem;
+}
+.footer-contacts p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: 1.3rem 0;
+}
+.footer-mail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.footer-mail > h1{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.footer-mail-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+}
+.footer-mail-box h1{
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+.footer-mail-box input{
+    border: none;
+    outline: none;
+    background-color: #E3E3E3;
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+.footer-mail-box input::placeholder{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.footer-mail-box a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--main);
+    transition: all .3s ease;
+    margin-top: 2.5rem;
+    padding: 1.5rem 4rem;
+}
+.footer-mail-box a:hover{
+    background-color: var(--main-hover);
+}
 @media screen and (max-width:1300px) {
     nav {
         width: 88%;
@@ -425,6 +536,12 @@ nav ul li a:hover::after {
     .feed-box {
         width: 194px;
     }
+    .footer-left {
+        margin-right: 0rem;
+    }
+    .footer-mail-box {
+        width: 250px;
+    }
 }
 @media screen and (max-width:980px) {
     .whoweare-left {
@@ -439,6 +556,10 @@ nav ul li a:hover::after {
         width: 100%;
         z-index: 100;
         justify-content: flex-start;
+    }
+    nav.activenav {
+        position: fixed;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     }
     nav ul{
         flex-direction: column;
@@ -525,6 +646,24 @@ nav ul li a:hover::after {
         font-size: 3rem;
         line-height: 5rem;
     }
+    #footer{
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 6rem 0;
+    }
+    .footer-left{
+        margin-top: 10rem;
+        text-align: center;
+    }
+    .footer-mail{
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+    .footer-mail-box{
+        justify-content: center;
+        width: 100%;
+    }
     
 }
 @media screen and (max-width:700px) {
@@ -557,6 +696,10 @@ nav ul li a:hover::after {
     .credo-img {
         width: 85%;
     }
+    #appre{
+        height: 30vh;
+        width: 100%;
+    }
 }
 @media screen and (max-width:550px) {
     .feed-box {
@@ -579,6 +722,31 @@ nav ul li a:hover::after {
     .feed-box {
         width: 85%;
     }
+    .footer-left{
+        margin-top: 10rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+    .footer-address {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+    .footer-contacts {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+    .footer-mail > h1 {
+        text-align: center;
+        line-height: 2.7rem;
+    }
 }
 @media screen and (max-width:480px) {
     .whoweare-left {
@@ -589,6 +757,10 @@ nav ul li a:hover::after {
     }
     .contact-left h1 {
         font-size: 4rem;
+    }
+    #appre{
+        height: 25vh;
+        width: 100%;
     }
 }
 @media screen and (max-width:330px) {
